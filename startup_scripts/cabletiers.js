@@ -3,10 +3,13 @@
 onEvent("item.registry", (event) => {
   // CableTiers
   event
-    .create("lubrified_advanced_processor")
-    .displayName("Lubrified Advanced Processor")
+    .create("watercooled_advanced_processor")
+    .displayName("Watercooled Processor")
     .color(1, "FFAA00");
-  event.create("ultimate_processor").displayName("Supercooled Processor");
+  event
+    .create("supercooled_advanced_processor")
+    .displayName("Supercooled Processor");
+  event.create("silverfish_guts").displayName("Sulverfish Guts");
 });
 
 onEvent("jei.hide.items", (event) => {
@@ -25,14 +28,35 @@ onEvent("jei.hide.items", (event) => {
 onEvent("fluid.registry", (event) => {
   // Basic "thick" (looks like lava) fluid with red tint
   event
-    .create("conductive_fluid")
+    .create("coolant_fluid")
     .textureThick(0xf2d98d)
     .bucketColor(0xf2d98d)
-    .displayName("Conductive Fluid");
+    .displayName("Coolant Fluid");
+});
 
+onEvent("fluid.registry", (event) => {
+  // Basic "thick" (looks like lava) fluid with red tint
   event
-    .create("supraconductive_fluid")
+    .create("bacteria_fluid")
     .textureThick(0xf2d98d)
     .bucketColor(0xf2d98d)
-    .displayName("Supraconductive Fluid");
+    .displayName("Bacteria Mixture");
+});
+
+onEvent("fluid.registry", (event) => {
+  // Basic "thick" (looks like lava) fluid with red tint
+  event
+    .create("glycol_ethylene_fluid")
+    .textureThick(0xf2d98d)
+    .bucketColor(0xf2d98d)
+    .displayName("Ethlyene Glycol");
+});
+
+onEvent("fluid.registry", (event) => {
+  // Basic "thick" (looks like lava) fluid with red tint
+  event
+    .create("supercoolant_fluid")
+    .textureThick(0xf2d98d)
+    .bucketColor(0xf2d98d)
+    .displayName("Supercoolant Fluid");
 });

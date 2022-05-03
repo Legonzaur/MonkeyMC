@@ -15,7 +15,7 @@ onEvent("jei.hide.items", (event) => {
 
 onEvent("jei.add.items", (event) => {
   //event.add(Item.of("kubejs:elite_exporter_unprocessed", {}));
-  // event.add(Item.of("kubejs:elite_importer_unprocessed", {}));
+  //event.add(Item.of("kubejs:elite_importer_unprocessed", {}));
 });
 
 onEvent("item.registry", (event) => {
