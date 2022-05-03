@@ -6,7 +6,7 @@ console.info(
 
 console.log("Hiding items in JEI, pre-event");
 
-events.listen("jei.hide.items", (event) => {
+onEvent("jei.hide.items", (event) => {
   console.log("Hiding items in JEI");
   // event.hide('/\\w+:\\w+_spawn_egg/');
   // event.hide('/minecraft:lingering_potion/');
@@ -19,9 +19,18 @@ events.listen("jei.hide.items", (event) => {
   event.hide("cabletiers:creative_requester");
 });
 
+onEvent("jei.add.items", (event) => {
+  //event.add(Item.of("kubejs:elite_exporter_unprocessed", {}));
+  // event.add(Item.of("kubejs:elite_importer_unprocessed", {}));
+});
+
 onEvent("item.registry", (event) => {
-  // Register new items here
-  // event.create('example_item').displayName('Example Item')
+  // CableTiers
+  event
+    .create("lubrified_advanced_processor")
+    .displayName("Lubrified Advanced Processor")
+    .color(1, "FFAA00");
+  event.create("ultimate_processor").displayName("Supercooled Processor");
 });
 
 onEvent("block.registry", (event) => {
