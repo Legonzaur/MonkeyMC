@@ -39,6 +39,18 @@ onEvent("recipes", (event) => {
   });
   event.recipes.createFilling("kubejs:lubrified_advanced_processor", [
     "refinedstorage:advanced_processor",
-    Fluid.of("pneumaticcraft:lubricant", 250),
+    Fluid.of("kubejs:conductive_fluid", 250),
   ]);
+  event.recipes
+    .createMixing(Fluid.of("kubejs:conductive_fluid", 500), [
+      "minecraft:blue_ice",
+      Fluid.of("pneumaticcraft:lubricant", 500),
+    ])
+    .heated();
+  event.recipes
+    .createMixing(Fluid.of("kubejs:supraconductive_fluid", 500), [
+      "minecraft:blue_ice",
+      Fluid.of("pneumaticcraft:lubricant", 500),
+    ])
+    .superheated();
 });

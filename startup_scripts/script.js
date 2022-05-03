@@ -11,12 +11,6 @@ onEvent("jei.hide.items", (event) => {
   // event.hide('/\\w+:\\w+_spawn_egg/');
   // event.hide('/minecraft:lingering_potion/');
   // event.hide('/minecraft:splash_potion/');
-  event.hide("cabletiers:creative_exporter");
-  event.hide("cabletiers:creative_importer");
-  event.hide("cabletiers:creative_constructor");
-  event.hide("cabletiers:creative_destructor");
-  event.hide("cabletiers:creative_disk_manipulator");
-  event.hide("cabletiers:creative_requester");
 });
 
 onEvent("jei.add.items", (event) => {
@@ -26,11 +20,7 @@ onEvent("jei.add.items", (event) => {
 
 onEvent("item.registry", (event) => {
   // CableTiers
-  event
-    .create("lubrified_advanced_processor")
-    .displayName("Lubrified Advanced Processor")
-    .color(1, "FFAA00");
-  event.create("ultimate_processor").displayName("Supercooled Processor");
+  // event.create('example_item').displayName('Example Item')
 });
 
 onEvent("block.registry", (event) => {
