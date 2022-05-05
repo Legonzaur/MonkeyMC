@@ -27,36 +27,20 @@ onEvent("jei.hide.items", (event) => {
 
 onEvent("fluid.registry", (event) => {
   // Basic "thick" (looks like lava) fluid with red tint
-  event
-    .create("coolant_fluid")
-    .textureThick(0xf2d98d)
-    .bucketColor(0xf2d98d)
-    .displayName("Coolant Fluid");
+  event.create("coolant_fluid").displayName("Coolant Fluid");
 });
 
 onEvent("fluid.registry", (event) => {
   // Basic "thick" (looks like lava) fluid with red tint
-  event
-    .create("bacteria_fluid")
-    .textureThick(0xf2d98d)
-    .bucketColor(0xf2d98d)
-    .displayName("Bacteria Mixture");
+  event.create("bacteria_fluid").displayName("Bacteria Mixture");
 });
 
 onEvent("fluid.registry", (event) => {
   // Basic "thick" (looks like lava) fluid with red tint
-  event
-    .create("glycol_ethylene_fluid")
-    .textureThick(0xf2d98d)
-    .bucketColor(0xf2d98d)
-    .displayName("Ethlyene Glycol");
+  event.create("glycol_ethylene_fluid").displayName("Ethlyene Glycol");
 });
 
 onEvent("fluid.registry", (event) => {
   // Basic "thick" (looks like lava) fluid with red tint
-  event
-    .create("supercoolant_fluid")
-    .textureThick(0xf2d98d)
-    .bucketColor(0xf2d98d)
-    .displayName("Supercoolant Fluid");
+  event.create("supercoolant_fluid").displayName("Supercoolant Fluid");
 });
