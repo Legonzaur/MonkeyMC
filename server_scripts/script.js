@@ -17,7 +17,7 @@ onEvent("recipes", (event) => {
   event.shapeless("reliquary:ender_staff", ["travel_anchors:travel_staff"]);
   event.shaped("travel_anchors:travel_anchor", ["AIA", "ICI", "AIA"], {
     I: "botania:elementium_ingot",
-    A: "minecraft:respawn_anchor",
+    A: "minecraft:obsidian",
     C: "create:refined_radiance_casing",
   });
 });
